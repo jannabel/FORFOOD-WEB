@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { About_usComponent } from './about_us/about_us.component';
 import { AdminComponent } from './admin/admin.component';
-import { C_productsComponent } from './c_products/c_products.component';
+import { All_productsComponent } from './all_products/all_products.component';
 
 const routes: Routes = [
   {
     path: 'productos',
-    component: C_productsComponent,
+    component: All_productsComponent,
   },
   {
     path: 'administrador',
