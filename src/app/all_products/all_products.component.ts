@@ -10,10 +10,13 @@ export class All_productsComponent implements OnInit {
 
   constructor(public json: ProductsService) { }
 
+  products: any = [];
+
   ngOnInit() {
 
     this.json.getProducts().subscribe(data => {
       console.log(data);
+      this.products = data;
     });
 
   }
